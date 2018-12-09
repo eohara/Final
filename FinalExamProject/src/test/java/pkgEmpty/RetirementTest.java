@@ -22,6 +22,8 @@ public class RetirementTest{
 		//double ExpectedSaved = 1454485.55;
 		
 		*/
+		//Need values for PV too
+		
 		rtm.setiYearsToWork(40);
 		rtm.setdAnnualReturnRetired(0.02);
 		rtm.setdAnnualReturnWorking(0.07);
