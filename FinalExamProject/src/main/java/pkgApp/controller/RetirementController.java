@@ -23,6 +23,7 @@ public class RetirementController implements Initializable {
 	@FXML
 	private TextField txtAnnualReturnWorking;
 	
+	
 	@FXML
 	private Label lblTotalAmountSaved;
 	
@@ -90,6 +91,7 @@ public class RetirementController implements Initializable {
 
 		lblSaveEachMonth.setText("$"+Double.toString(rtm.AmountToSave()));
 		lblTotalAmountSaved.setText("$"+Double.toString(rtm.TotalAmountSaved()));
+		
 		
 		
 	}

@@ -13,10 +13,10 @@ public class Retirement {
 	private double dMonthlySSI;
 	
 	public Retirement() 
+	
 	{
 		
 	}
-	
 	
 	public Retirement(int iYearsToWork, double dAnnualReturnWorking, int iYearsRetired, double dAnnualReturnRetired,
 			double dRequiredIncome, double dMonthlySSI) {
@@ -30,7 +30,7 @@ public class Retirement {
 	}
 
 	
-	//TODO: Build the contructor, getters and setters for the attributes above.
+	//TODO: Build the constructor, getters and setters for the attributes above.
 	
 	
 
@@ -113,11 +113,11 @@ public class Retirement {
 		
 		
 		
-		double PMT = (int)(FinanceLib.pmt(dAnnualReturnWorking / 12, iYearsToWork * 12, 0, TotalAmountSaved(), false)*100);
+		double PMT = (int)(FinanceLib.pmt(dAnnualReturnWorking / 12, iYearsToWork * 12, 0, TotalAmountSaved(), false) * 100);
 
 		//System.out.println(PMT);
 		
-		return -1*PMT/100;
+		return -1 * PMT / 100;
 	}
 	
 	
@@ -131,11 +131,11 @@ public class Retirement {
 		//double iPayment = rtm.AmountToSave();
 		
 		
-		double PV = (int)(FinanceLib.pv(dAnnualReturnRetired / 12, iYearsRetired * 12 , dMonthlySSI - dRequiredIncome, 0, false)*100);
+		double PV = (int)(FinanceLib.pv(dAnnualReturnRetired / 12, iYearsRetired * 12 , dMonthlySSI - dRequiredIncome, 0, false) * 100);
 
 		//System.out.println(PV);
 
-		return (double) PV/100;
+		return (double) PV / 100;
 	}
 	
 }
